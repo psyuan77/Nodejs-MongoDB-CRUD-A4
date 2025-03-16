@@ -1,0 +1,13 @@
+extends static
+
+block content
+  main.contact-container
+    h1 Contact Form
+    form(action="/contact", method="POST")
+      .contact-name
+        label(for="name") Name:
+        input(type="text", id="name", name="name", required)
+      .contact-message
+        label(for="message") Message:
+        textarea(id="message", name="message", required)
+      button(type="submit") Submit
